@@ -7974,6 +7974,8 @@
 .fa-magnifying-glass:before,
 .fa-search:before {
   content: "\f002";
+  font-family: "font awesome 6 free";
+  font-weight: 600;
 }
 
 .fa-magnifying-glass-dollar:before,

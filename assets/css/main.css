@@ -2839,13 +2839,13 @@ div.demo img {
 
 .nice-select::after {
   position: absolute;
-  content: "\f107";
+  content: "\f078";
+  font-family: "font awesome 6 free";
+  font-weight: 600;
   top: 50%;
   right: 20px;
   font-size: 18px;
-  font-family: var(--tp-ff-fontawesome);
   color: var(--tp-heading-4);
-  font-weight: 500;
   pointer-events: none;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
@@ -3235,7 +3235,7 @@ div.demo img {
 }
 
 .tp-breadcrumb-spacing {
-  padding: 210px 0;
+  padding: 80px 0;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -4355,10 +4355,11 @@ div.demo img {
 
 .tp-header-search .search-click-home {
   color: var(--tp-dark-4);
+  font-size: 18px;
 }
 
 .tp-header-search .search-click-home:hover {
-  color: var(--tp-theme-04);
+  color: var(--tp-theme-primary);
 }
 
 .tp-header-search-pet button {
@@ -4396,12 +4397,12 @@ div.demo img {
 }
 
 .tp-header-cart button {
-  font-size: 26px;
+  font-size: 18px;
   color: var(--tp-dark-4);
 }
 
 .tp-header-cart button:hover {
-  color: var(--tp-theme-04);
+  color: var(--tp-theme-primary);
 }
 
 .tp-header-cart-care button:hover {
@@ -11470,8 +11471,8 @@ div.demo img {
 }
 
 .tp-feature-title {
-  font-size: 26px;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 2;
   color: var(--tp-common-black);
   transition: background-size 0.4s linear;
   background-image: linear-gradient(#007f61, #007f61),
@@ -14354,7 +14355,8 @@ div.demo img {
   only screen and (min-width: 768px) and (max-width: 991px),
   only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-counter-item-count {
-    font-size: 45px;
+    font-size: 20px;
+    letter-spacing: 2px;
     line-height: 1;
   }
 }
@@ -16898,7 +16900,7 @@ div.demo img {
   width: 60px;
   height: 185px;
   border-radius: 30px;
-  background-color: var(--tp-theme-secondary);
+  background-color: var(--tp-theme-primary);
   /* justify-content: center; */
 }
 
@@ -16942,7 +16944,7 @@ div.demo img {
   height: 26px;
   width: 200px;
   border-radius: 13px;
-  background-color: var(--tp-theme-secondary);
+  background-color: var(--tp-theme-primary);
   font-size: 14px;
   line-height: 25px;
   color: var(--tp-common-white);
@@ -17958,6 +17960,14 @@ div.demo img {
 
 .tp-team-care-thumb-wrapper {
   transition: all 0.4s ease;
+}
+.tp-team-care-thumb-wrapper > a {
+  width: 100% !important;
+  height: 250px !important;
+}
+.tp-team-care-thumb-wrapper > a > img {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .tp-team-care-thumb-wrapper::before {
@@ -21165,7 +21175,7 @@ div.demo img {
   font-size: 12px;
   font-weight: 700;
   color: var(--tp-common-white);
-  background-color: var(--tp-theme-04);
+  background-color: var(--tp-theme-primary);
   width: 18px;
   height: 18px;
   line-height: 18px;
@@ -21281,8 +21291,8 @@ div.demo img {
   top: 13px;
   position: absolute;
   color: #6f7172;
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 700;
+  font-family: "font awesome 6 free";
+  font-weight: 600;
 }
 
 .coupon-accordion span {
@@ -21326,7 +21336,9 @@ div.demo img {
 
 .payment-method .accordion-button::after {
   position: absolute;
-  content: "\f067";
+  content: "\f077";
+  font-family: "font awesome 6 free";
+  font-weight: 600;
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -21334,9 +21346,7 @@ div.demo img {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-family: "Font Awesome 5 Pro";
   font-size: 16px;
-  font-weight: 400;
   margin-left: 0;
   background-image: none;
 }
@@ -21348,7 +21358,9 @@ div.demo img {
 }
 
 .payment-method .accordion-button:not(.collapsed)::after {
-  content: "\f068";
+  content: "\f078";
+  font-family: "font awesome 6 free";
+  font-weight: 600;
 }
 
 .payment-method .accordion-body {
@@ -23162,3 +23174,11 @@ p.checkout-coupon input[type="text"]:focus {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.login-form {
+  height: 100vh;
+  overflow-y: scroll;
+}
+.login-form::-webkit-scrollbar {
+  width: 0;
+}
